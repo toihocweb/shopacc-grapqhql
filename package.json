@@ -1,0 +1,47 @@
+{
+  "name": "nickgiare",
+  "version": "1.0.0",
+  "description": "Nick Gia Re",
+  "main": "server.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.dev.js",
+    "build:production": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.production.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "concurrently \"npm run dev\" \"nodemon server.js\""
+  },
+  "author": "Nhat Bui",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-boost": "^0.3.1",
+    "axios": "^0.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0",
+    "graphql-tag": "^2.10.1",
+    "mongoose": "^5.5.9",
+    "react": "^16.6.3",
+    "react-apollo": "^2.5.5",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.19.0",
+    "react-hot-loader": "^3.1.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  }
+}
